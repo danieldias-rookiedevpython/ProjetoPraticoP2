@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniGeek Store</title>
-    <link rel="icon" type="image/png" href="imagens/UniGeek Store (1) (1).png">
+    <link rel="icon" type="image/png" href="imagens/UniGeek_Store_logo.png">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
@@ -53,7 +53,56 @@
             </div>
         </section>
 
-        <!-- Seção de Destaques mais vendidos -->
+        <div>
+            <h2 class="destaques-titulo">Produtos em Destaque</h2>
+        </div>
+        
+        <section class="destaques">
+            <div class="destaques-inner">
+                <div class="produtos-destaque">
+                    <img src="imagens/produtos/smartphoneXYZ.jpg" alt="Smartphone XYZ">
+                    <h3>Smartphone XYZ</h3>
+                    <h4>R$ 1.070,99</h4>
+                    <button onclick="adicionarAoCarrinho('Smartphone XYZ')">Adicionar ao Carrinho</button>
+                    <p>O mais recente smartphone com tecnologia de ponta.</p>
+                </div>
+                <div class="produtos-destaque">
+                    <img src="imagens/produtos/fone-de-ouvidoABC.jpg" alt="Fone de Ouvido ABC">
+                    <h3>Fone de Ouvido ABC</h3>
+                    <h4>R$ 299,99</h4>
+                    <button onclick="adicionarAoCarrinho('Fone de Ouvido ABC')">Adicionar ao Carrinho</button>
+                    <p>Experiência sonora imersiva com cancelamento de ruído.</p>
+                </div>
+                <div class="produtos-destaque">
+                    <img src="imagens/produtos/playstation5.jpg" alt="Produto 3">
+                    <h3>Playstation 5</h3>
+                    <h4>R$ 3.211,99</h4>
+                    <button onclick="adicionarAoCarrinho('Playstation 5')">Adicionar ao Carrinho</button>
+                    <p>Aproveite os descontos e garanta uma experiência imersiva com o popular console do mercado.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+            <div class="footer-inner">
+                <p>&copy; 2024 UniGeek Store. Todos os direitos reservados.</p>
+            </div>
+            <h4>Formas de Pagamento</h4>
+            <div class="icones">
+                <img src="imagens/icones-pag/visa-icone.png" alt="Visa" class="icone-pagamento">
+                <img src="imagens/icones-pag/icone_mastercard.png" alt="MasterCard" class="icone-pagamento">
+                <img src="imagens/icones-pag/americanexpress-icon.png" alt="American Express" class="icone-pagamento">
+                <img src="imagens/icones-pag/paypal-icone.png" alt="PayPal" class="icone-pagamento">
+                <img src="imagens/icones-pag/icone_pix.png" alt="Pix" class="icone-pagamento">
+            </div>
+            <h4>Siga-nos nas Redes Sociais</h4>
+            <div class="redes-sociais">
+                <img src="imagens/icones-redesSocias/facebook-icon.jpg" alt="Facebook" class="icone-rede-social">
+                <img src="imagens/icones-redesSocias/instagram-icon.jpg" alt="Instagram" class="icone-rede-social">
+                <img src="imagens/icones-redesSocias/x(twitter)-icon.png" alt="Twitter" class="icone-rede-social">
+                <img src="imagens/icones-redesSocias/linkedin-icon.png "alt="LinkedIn" class="icone-rede-social">
+            </div>
+    </footer>
 </body>
 </html>
