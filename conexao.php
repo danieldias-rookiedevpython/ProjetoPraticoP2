@@ -1,5 +1,5 @@
 <?php 
-    $sql = new mysqli("localhost", "root", "", "meu_banco_de_dados");
+    $sql = new mysqli("localhost", "root", "", "projetopratico");
     if ($sql->connect_error) {
         die("Falha na conexão: " . $sql->connect_error);
     }

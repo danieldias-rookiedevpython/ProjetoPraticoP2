@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="imagens/UniGeek_Store_logo.png">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <script src="index.php" defer></script>
 </head>
 <body>
     <header class="header">
@@ -30,7 +31,7 @@
     <main class="main-content">
         <section class="cadastro">
             <h2 class="cadastro-titulo">Cadastro de Usuário</h2>
-            <form class="cadastro-form">
+            <form class="cadastro-form" action="index.php" method="POST">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required>
 
