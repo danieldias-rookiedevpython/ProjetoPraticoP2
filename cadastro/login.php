@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="images/UniGeek_Store_logo.png">
+</head>
+<body>
+   <header class="header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="../imagens/UniGeek_Store_logo.png" alt="UniGeek Store Logo" class="logo">
+                <h1 class="logo-name">UniGeek Store</h1>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="cadastro/login.php">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="login">
+            <h2 class="login-titulo">Login</h2>
+            <form class="login-form" action="processa.php" method="POST">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2024 ProjetoPraticoP2. Todos os direitos reservados.</p>
+        </div>
+        <h4>Formas de Pagamento</h4>
+            <div class="icones">
+                <img src="../imagens/icones-pag/visa-icone.png" alt="Visa" class="icone-pagamento">
+                <img src="../imagens/icones-pag/icone_mastercard.png" alt="MasterCard" class="icone-pagamento">
+                <img src="../imagens/icones-pag/americanexpress-icon.png" alt="American Express" class="icone-pagamento">
+                <img src="../imagens/icones-pag/paypal-icone.png" alt="PayPal" class="icone-pagamento">
+                <img src="../imagens/icones-pag/icone_pix.png" alt="Pix" class="icone-pagamento">
+            </div>
+            <h4>Siga-nos nas Redes Sociais</h4>
+            <div class="redes-sociais">
+                <img src="../imagens/icones-redesSocias/facebook-icon.jpg" alt="Facebook" class="icone-rede-social">
+                <img src="../imagens/icones-redesSocias/instagram-icon.jpg" alt="Instagram" class="icone-rede-social">
+                <img src="../imagens/icones-redesSocias/x(twitter)-icon.png" alt="Twitter" class="icone-rede-social">
+                <img src="../imagens/icones-redesSocias/linkedin-icon.png "alt="LinkedIn" class="icone-rede-social">
+            </div>
+    </footer>
+</body>
+</html>
