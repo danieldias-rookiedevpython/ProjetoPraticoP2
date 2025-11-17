@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 // Inclui a conexão com o banco
 require_once 'conection.php';
+require_once 'login.php';
 
 // Verifica se $conn existe e é um objeto mysqli válido
 if (!isset($conn) || !($conn instanceof mysqli)) {
@@ -95,75 +96,3 @@ if (!empty($erros)) {
 
 // Fecha conexão
 $conn->close();
-?>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Processamento de Cadastro</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/png" href="../images/UniGeek_Store_logo.png">
-</head>
-<body>
-    <header class="header">
-        <div class="container header-inner">
-            <div class="brand">
-                <img src="imagens/UniGeek_Store_logo.png" alt="UniGeek Store Logo" class="logo">
-                <h1 class="logo-name">UniGeek Store</h1>
-            </div>
-
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="main-content">
-        <section class="processamento">
-            <div class="processamento-conteudo">
-                <?php if (isset($sucesso) && $sucesso): ?>
-                    <h2>Cadastro realizado com sucesso!</h2>
-                    <p>Você já pode fazer login com seu e-mail e senha.</p>
-                    <a href="login.php" class="ir-login">Ir para Login</a>
-                <?php else: ?>
-                    <h2>Erro no cadastro</h2>
-                    <p>Ocorreu um erro ao processar seu cadastro:</p>
-                    <div class="mensagem-erro">
-                        <?php
-                            // mostra mensagem amigável sanitizada
-                            echo isset($mensagemErro) ? htmlspecialchars($mensagemErro) : 'Método de requisição inválido.';
-                        ?>
-                    </div>
-                    <a href="../cadastro.html" class="voltar">Voltar ao Cadastro</a>
-                <?php endif; ?>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2024 ProjetoPraticoP2. Todos os direitos reservados.</p>
-        </div>
-        <h4>Formas de Pagamento</h4>
-            <div class="icones">
-                <img src="imagens/icones-pag/visa-icone.png" alt="Visa" class="icone-pagamento">
-                <img src="imagens/icones-pag/icone_mastercard.png" alt="MasterCard" class="icone-pagamento">
-                <img src="imagens/icones-pag/americanexpress-icon.png" alt="American Express" class="icone-pagamento">
-                <img src="imagens/icones-pag/paypal-icone.png" alt="PayPal" class="icone-pagamento">
-                <img src="imagens/icones-pag/icone_pix.png" alt="Pix" class="icone-pagamento">
-            </div>
-            <h4>Siga-nos nas Redes Sociais</h4>
-            <div class="redes-sociais">
-                <img src="imagens/icones-redesSocias/facebook-icon.jpg" alt="Facebook" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/instagram-icon.jpg" alt="Instagram" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/x(twitter)-icon.png" alt="Twitter" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/linkedin-icon.png "alt="LinkedIn" class="icone-rede-social">
-            </div>
-    </footer>
-</body>
-</html>
