@@ -61,5 +61,19 @@
                 <img src="imagens/icones-redesSocias/linkedin-icon.png "alt="LinkedIn" class="icone-rede-social">
             </div>
     </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.get("status") == "ok") {
+            abrirPopup("Login realizado com sucesso!", "produtos.html");
+        }
+
+        if (params.get("status") == "erro") {
+            abrirPopup("Erro no login. Verifique suas credenciais e tente novamente.");
+        }
+    </script>
 </body>
 </html>
