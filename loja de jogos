@@ -1,0 +1,139 @@
+/*loja de jogos*/
+
+<div class="jogo">
+    <img src="https://pt.wikipedia.org/wiki/Grand_Theft_Auto_V#/media/Ficheiro:Grand_Theft_Auto_V_capa.png">
+    <h2>GTAv</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>199</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Battlefeld 6 Phantom Edition PC(EA App)</h2>
+    <p>Battlefield 6 é um jogo eletrônico de tiro em primeira pessoa dsenvolvido pela Battlefield Studios e publicado pela Electronic Arts. É o 13º título da série Battlefield e o sucessor de Battlefield 2042, de 2021. Foi lançado em 10 de outubro de 2025, para Windows, PlayStation 5 e Xbox Series X/S.
+O jogo foi anunciado em 22 de julho de 2025, tendo seu nome confirmado como "Battlefield 6" após uma série de especulações que indicavam tal nomeação meses antes</p>
+    <strong>799</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>SpaceBourne 2</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>59,99</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Batman™: Arkham Knight</h2>
+    <p>Batman™: Arkham Knight</p>
+    <strong>59,99</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>NBA 2K26</h2>
+    <p>Domine tudo no MyCAREER, MyTEAM, MyNBA, The W e Play Now. Mande ver em jogadas e dribles com realismo surreal, graças ao ProPLAY™. Dispute com amigos e rivais e mostre quem leva a coroa no NBA 2K26.<p>
+    </strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Edição Ultimate do EA SPORTS FC™ 26</h2>
+    <p>O Clube é Seu no EA SPORTS FC™ 26. Jogue do seu jeito com uma experiência de jogabilidade reformulada impulsionada pelos comentários da comunidade, Desafios de Manager ao Vivo que trazem novos enredos para a nova temporada e Arquétipos inspirados em craques do esporte.</p>
+    <strong>59,99</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Terraria</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>32,99</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>F1® 25</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>259,99</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Forza Horizon 5</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>249,99</strong>Apex Legends
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Sonic Frontiers</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>90,00</strong>
+</div>
+<div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Call of Duty®: Black Ops III</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>329,90</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Comprar Call of Duty®: Black Ops III - Zombies Deluxe</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>549,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Comprar Call of Duty: Black Ops III - Multiplayer Starter PackO</h2>
+    <p>Pacote Inicial Multijogador: Trata-se de uma versão exclusivamente multijogador de Black Ops III, possuindo conteúdo limitado. Se você possui o Pacote Inicial, atualize seu jogo para a versão completa aqui.</p>
+    <strong>82,90</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Tom Clancy's Ghost Recon® Wildlands</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>149,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Comprar Tom Clancy's Ghost Recon Wildlands - Gold Year 2</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>239,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Comprar Tom Clancy's Ghost Recon Wildlands - Ultimate Year 2</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>350,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Hillow Knigth:Siksong</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>60,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Cuphead</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>36,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Faing Simulator 25</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>150,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>It Takes two</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>199,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Anno 117:Pax Romana</h2>
+    <p>299,99</p>
+    <strong>PREÇO</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Jurassic World Eevolution 3</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>226,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Total War :WARAMMERII</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>259,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>STARDEW Valley</h2>
+    <p>DESCRIÇÃO</p>
+    <strong>24,99</strong>
+</div><div class="jogo">
+    <img src="URL_DA_IMAGEM">
+    <h2>Marvel´Spider-Man2</h2>
+    <p>DESCRIÇÃO</p>
+<strong>250,99</strong>
+</div>
