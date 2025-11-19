@@ -24,4 +24,6 @@ function abrirPopup(mensagem, destino = null) {
             window.location.href = destino;
         }
     };
-}   
+}
+
+

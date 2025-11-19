@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="icon" type="image/png" href="imagens/UniGeek_Store_logo.png">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=1.0.3">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header class="header">
@@ -31,155 +31,195 @@
             <a href="carrinho.html" title="Ver Carrinho">
                 🛒 <span id="carrinho-contador">0</span>
             </a>
+        </div>
     </header>
 
+    <script>
+        function filtrarProdutos() {
+            const filtro = document.getElementById('filtro-categoria').value;
+            const produtos = document.querySelectorAll('.destaque-item');
+
+            produtos.forEach(produto => {
+                if (filtro === 'todos' || produto.getAttribute('data-categoria') === filtro) {
+                    produto.style.display = 'block';
+                } else {
+                    produto.style.display = 'none';
+                }
+            });
+        }
+
+    </script>
     <main class="main-content">
         <section class="destaques">
             <h2 class="destaques-titulo">Produtos em Destaque</h2>
+
+            <div class="produtos-filtro">
+                <label for="filtro-categoria">Filtrar por Categoria:</label>
+                <select id="filtro-categoria" onchange="filtrarProdutos()">
+                    <option value="todos">Todos</option>
+                    <option value="consoles">Consoles</option>
+                    <option value="jogos">Jogos</option>
+                    <option value="acessorios">Acessórios</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                </select>
+            </div>
+
             <div class="destaques-inner">
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="consoles">
                     <img src="imagens/produtos/xbox-series-x.jpeg" alt="xbox-series-x" class="destaque-imagem">
                     <h4>Xbox Series X</h4>
                     <p> R$5.249,84</p>
                     <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/GTA5.jpeg" alt="GTA V para PS5" class="destaque-imagem">
                     <h4>GTA V para PS5</h4>
                     <p>R$ 199,99</p>
                     <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/battlefield_6.jpeg" alt="Battlefeld 6 Phantom Edition PS5" class="destaque-imagem">
                     <h4>Battlefeld 6 Phantom Edition PS5</h4>
                     <p>R$ 300,99</p>
                     <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/batman_arkhan_night.jpeg" alt="batman_arkhan_night" class="destaque-imagem">
                     <h4>Batman™: Arkham Knight</h4>
                     <p>R$ 199,90.</p>
                     <button onclick="adicionarAoCarrinho(4)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="consoles">
                     <img src="imagens/produtos/nintendo_switch.jpeg" alt="nintendo_switch" class="destaque-imagem">
                     <h4>Nintendo Switch</h4>
                     <p>R$ 1999,80.</p>
                     <button onclick="adicionarAoCarrinho(5)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/Hollow_Knight.jpeg" alt="Hollow_Knight" class="destaque-imagem">
                     <h4>Hollow Knight: Silk Song</h4>
                     <p>R$ 48,90</p>
                     <button onclick="adicionarAoCarrinho(6)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/ghost_of_tsushima.jpeg" alt="ghost_of_tsushima" class="destaque-imagem">
                     <h4>Ghost Of Tsushima</h4>
                     <p>R$ 168, 78</p>
                     <button onclick="adicionarAoCarrinho(7)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="acessorios">
                     <img src="imagens/produtos/fone-de-ouvidoABC.jpg" alt="fone-de-ouvidoABC" class="destaque-imagem">
                     <h4>Fone de Ouvido ABC</h4>
                     <p>R$ 82,54</p>
                     <button onclick="adicionarAoCarrinho(8)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="consoles">
                     <img src="imagens/produtos/playstation5.jpg" alt="playstation5" class="destaque-imagem">
                     <h4>Controle DualSense PS5</h4>
                     <p>R$ 349,90</p>
                     <button onclick="adicionarAoCarrinho(9)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="eletronicos">
                     <img src="imagens/produtos/smartphoneXYZ.jpg" alt="smartphoneXYZ" class="destaque-imagem">
                     <h4>smartphoneXYZ</h4>
                     <p>R$ 3.299,99</p>
                     <button onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item ">
+                <div class="destaque-item " data-categoria="eletronicos">
                     <img src="imagens/produtos/notebook_gamer.jpeg" alt="laptop-gamer-abc" class="destaque-imagem">
                     <h4>Laptop Gamer ABC</h4>
                     <p>R$ 6.499,00</p>
                     <button onclick="adicionarAoCarrinho(11)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="eletronicos">
                     <img src="imagens/produtos/tablet.jpeg" alt="tablet-xyz" class="destaque-imagem">
                     <h4>Tablet XYZ</h4>
                     <p>R$ 1.299,90</p>
                     <button onclick="adicionarAoCarrinho(12)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="acessorios">
                     <img src="imagens/produtos/smartwatch.jpeg" alt="smartwatch-123" class="destaque-imagem">
                     <h4>Smartwatch 123</h4>
                     <p>R$ 799,00</p>
                     <button onclick="adicionarAoCarrinho(13)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="eletronicos">
                     <img src="imagens/produtos/monitor_gamer.jpeg" alt="monitor-gamer-abc" class="destaque-imagem">
                     <h4>Monitor Gamer ABC</h4>
                     <p>R$ 1.499,90</p>
                     <button onclick="adicionarAoCarrinho(14)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/ghost_recon.jpeg" alt="ton-clancy's-ghost-recon" class="destaque-imagem">
                     <h4>Tom Clancy's: Ghost Recon</h4>
                     <p>R$ 79,99</p>
                     <button onclick="adicionarAoCarrinho(15)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/black_opps_3.jpeg" alt="call-of-dutty-black-opps-III" class="destaque-imagem">
                     <h4>Call of Dutty: Black Opps III</h4>
                     <p>R$ 220,88</p>
                     <button onclick="adicionarAoCarrinho(16)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/horizon_zero_dawn.jpeg" alt="horizon_zero_dawn class="destaque-imagem">
                     <h4>Horizon Zero Dawn</h4>
                     <p>R$ 161,87</p>
                     <button onclick="adicionarAoCarrinho(17)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
+                <div class="destaque-item" data-categoria="jogos">
                     <img src="imagens/produtos/cuphead.jpeg" alt="cuphead" class="destaque-imagem">
                     <h4>Cuphead</h4>
                     <p>R$ 36,99</p>
                     <button onclick="adicionarAoCarrinho(18)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
-                    <img src="imagens/produtos/it_takes_two.jpeg" alt="it_takes_two" class="destaque-imagem">
+                <div class="destaque-item" data-categoria="jogos">
+                    <img src="imagens/produtos/It_Takes_Two_capa.jpg" alt="it_takes_two" class="destaque-imagem">
                     <h4>It Takes Two</h4>
                     <p>R$ 199,99</p>
                     <button onclick="adicionarAoCarrinho(19)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
-                    <img src="imagens/produtos/anno_117.jpeg" alt="anno_117" class="destaque-imagem">
+                <div class="destaque-item" data-categoria="jogos">
+                    <img src="imagens/produtos/anno117_PaxRomana.jpeg" alt="anno_117" class="destaque-imagem">
                     <h4>Anno 117: Pax Romana</h4>
                     <p>R$ 299,99</p>
                     <button onclick="adicionarAoCarrinho(20)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
-                    <img src="imagens/produtos/jurassic_world_evolution_3.jpeg" alt="jurassic_world_evolution_3" class="destaque-imagem">
+                <div class="destaque-item" data-categoria="jogos">
+                    <img src="imagens/produtos/jurassickworld.jpeg" alt="jurassic_world_evolution_3" class="destaque-imagem">
                     <h4>Jurassic World Evolution 3</h4>
                     <p>R$ 249,99</p>
                     <button onclick="adicionarAoCarrinho(21)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
-                    <img src="imagens/produtos/farming_simulator_25.jpeg" alt="farming_simulator_25" class="destaque-imagem">
+                <div class="destaque-item" data-categoria="jogos">
+                    <img src="imagens/produtos/FarmingSimulator.jpeg" alt="farming_simulator_25" class="destaque-imagem">
                     <h4>Farming Simulator 25</h4>
                     <p>R$ 150,99</p>
                     <button onclick="adicionarAoCarrinho(22)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
-                    <img src="imagens/produtos/total_war_warhammer_ii.jpeg" alt="total_war_warhammer_ii" class="destaque-imagem">
+                <div class="destaque-item" data-categoria="jogos">
+                    <img src="imagens/produtos/WarHammer2.jpeg" alt="total_war_warhammer_ii" class="destaque-imagem">
                     <h4>Total War: WARHAMMER II</h4>
                     <p>R$ 259,99</p>
                     <button onclick="adicionarAoCarrinho(23)">Adicionar ao Carrinho</button>
                 </div>
-                <div class="destaque-item">
-                    <img src="imagens/produtos/stardew_valley.jpeg" alt="stardew_valley" class="destaque-imagem">
+                <div class="destaque-item" data-categoria="jogos">
+                    <img src="imagens/produtos/stardewValley.jpeg" alt="stardew_valley" class="destaque-imagem">
                     <h4>Stardew Valley</h4>
                     <p>R$ 24,99</p>
                     <button onclick="adicionarAoCarrinho(24)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="destaque-item" data-categoria="acessorios">
+                    <img src="imagens/produtos/foneBluetooth.jpeg" alt="foneBluetooth" class="destaque-imagem">
+                    <h4>HeadSet BlueTooth</h4>
+                    <p>R$ 52,90</p>
+                    <button onclick="adicionarAoCarrinho(25)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="destaque-item" data-categoria="acessorios">
+                    <img src="imagens/produtos/ControleGamer.webp" alt="controle_gamer_personalizado" class="destaque-imagem">
+                    <h4>Controle Gamer Personalizado</h4>
+                    <p>R$ 199,90</p>
+                    <button onclick="adicionarAoCarrinho(26)">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </section>

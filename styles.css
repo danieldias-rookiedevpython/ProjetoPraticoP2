@@ -570,3 +570,22 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+.produtos-filtro {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.produtos-filtro label {
+    background: rgba(0, 0, 0, 0.542);
+    font-size: 1.1rem;
+    padding: 12px 16px;
+    border-radius: 16px;
+    color: white;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.produtos-filtro select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid #4b1c8d;
+    font-size: 1rem;
+}
