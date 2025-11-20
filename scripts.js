@@ -6,24 +6,17 @@ function adicionarAoCarrinho() {
 }
 
 function abrirPopup(mensagem, destino = null) {
-    const overlay = document.createElement('div');
-    overlay.classList.add('popup-overlay', 'active');
+    const overlay = document.getElementById("popup-overlay");
+    const msg = document.getElementById("popup-message");
+    const fechar = document.getElementById("popup-close");
 
-    overlay.innerHTML = `
-        <div class="popup">
-            <p>${mensagem}</p>
-            <button id="fechar-popup">Fechar</button>
-        </div>
-    `;
+    msg.textContent = mensagem; 
+    overlay.style.display = "flex";
 
-    document.body.appendChild(overlay);
-
-    document.getElementById("fechar-popup").onclick = () => {
-        overlay.remove();
-        if (destino) {
-            window.location.href = destino;
-        }
+    fechar.onclick = () => {
+        overlay.style.display = "none";
+        if (destino) window.location.href = destino;
     };
 }
 
-
+console.log("scripts.js carregou!");

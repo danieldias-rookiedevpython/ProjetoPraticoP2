@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="imagens/UniGeek_Store_logo.png">
 </head>
+
 <body>
-   <header class="header">
+    <header class="header">
         <div class="container header-inner">
             <div class="brand">
                 <img src="imagens/UniGeek_Store_logo.png" alt="UniGeek Store Logo" class="logo">
@@ -47,32 +49,39 @@
             <p>&copy; 2024 UniGeek Store. Todos os direitos reservados.</p>
         </div>
         <h4>Formas de Pagamento</h4>
-            <div class="icones">
-                <img src="imagens/icones-pag/visa-icone.png" alt="Visa" class="icone-pagamento">
-                <img src="imagens/icones-pag/icone_mastercard.png" alt="MasterCard" class="icone-pagamento">
-                <img src="imagens/icones-pag/americanexpress-icon.png" alt="American Express" class="icone-pagamento">
-                <img src="imagens/icones-pag/paypal-icone.png" alt="PayPal" class="icone-pagamento">
-            </div>
-            <h4>Siga-nos nas Redes Sociais</h4>
-            <div class="redes-sociais">
-                <img src="imagens/icones-redesSocias/facebook-icon.jpg" alt="Facebook" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/instagram-icon.jpg" alt="Instagram" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/x(twitter)-icon.png" alt="Twitter" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/linkedin-icon.png "alt="LinkedIn" class="icone-rede-social">
-            </div>
+        <div class="icones">
+            <img src="imagens/icones-pag/visa-icone.png" alt="Visa" class="icone-pagamento">
+            <img src="imagens/icones-pag/icone_mastercard.png" alt="MasterCard" class="icone-pagamento">
+            <img src="imagens/icones-pag/americanexpress-icon.png" alt="American Express" class="icone-pagamento">
+            <img src="imagens/icones-pag/paypal-icone.png" alt="PayPal" class="icone-pagamento">
+        </div>
+        <h4>Siga-nos nas Redes Sociais</h4>
+        <div class="redes-sociais">
+            <img src="imagens/icones-redesSocias/facebook-icon.jpg" alt="Facebook" class="icone-rede-social">
+            <img src="imagens/icones-redesSocias/instagram-icon.jpg" alt="Instagram" class="icone-rede-social">
+            <img src="imagens/icones-redesSocias/x(twitter)-icon.png" alt="Twitter" class="icone-rede-social">
+            <img src="imagens/icones-redesSocias/linkedin-icon.png " alt="LinkedIn" class="icone-rede-social">
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-box">
+            <p id="popup-message"></p>
+            <button id="popup-close">Fechar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 
     <script>
         const params = new URLSearchParams(window.location.search);
+        const status = params.get('status');
 
-        if (params.get("status") == "ok") {
-            abrirPopup("Login realizado com sucesso!", "produtos.html");
+        if (status === "ok") {
+            abrirPopup("Login realizado com sucesso!");
         }
-
-        if (params.get("status") == "erro") {
-            abrirPopup("Erro no login. Verifique suas credenciais e tente novamente.");
+        if (status === "error") {
+            abrirPopup("Email ou senha incorretos. Tente novamente.");
         }
     </script>
 </body>
