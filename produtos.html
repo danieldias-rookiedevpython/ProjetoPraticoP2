@@ -10,7 +10,7 @@
     <script src="scripts.js"></script>
 </head>
 
-<body>
+<body onload="vizualizarCarrinho()">
     <header class="header">
         <div class="container header-inner">
             <div class="brand">
@@ -36,6 +36,8 @@
                 🛒 <span id="carrinho-contador">0</span>
             </a>
         </div>
+
+
     </header>
 
     <script>
@@ -254,6 +256,14 @@
             <img src="imagens/icones-redesSocias/linkedin-icon.png " alt="LinkedIn" class="icone-rede-social">
         </div>
     </footer>
+
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-box">
+            <p id="popup-message"></p>
+            <button id="popup-close">Fechar</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

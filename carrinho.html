@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="icon" type="image/png" href="imagens/UniGeek_Store_logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="nav-logo">
+                    <img src="imagens/UniGeek_Store_logo.png" alt="Logo" class="logo">
+                </a>
+                <span class="logo-name">UniGeek Store</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <div class="carrinho">
+                <a href="carrinho.html">
+                    🛒 <span id="carrinho-contador">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="main-content">
+        <h1 class="carrinho-titulo">Seu Carrinho</h1>
+
+        <div id="carrinho-container" class="carrinho-container">
+            <!-- Itens do carrinho serão carregados pelo JS -->
+        </div>
+
+        <div class="carrinho-resumo">
+            <h2 class="resumo-titulo">Resumo</h2>
+            <p class="resumo-total">Total: R$ <span id="carrinho-total">0,00</span></p>
+            <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-box">
+            <p id="popup-message"></p>
+            <button id="popup-close">Fechar</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h4>© 2025 UniGeek Store - Todos os direitos reservados</h4>
+    </footer>
+</body>
+</html>
