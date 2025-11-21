@@ -2,7 +2,7 @@
 console.log("scripts.js carregou!");
 
 // =========================
-// LISTA DE PRODUTOS (com imagem)
+// LISTA DE PRODUTOS 
 // =========================
 const produtos = [
     { id: 1, nome: "Xbox Series X", preco: 5249.84},
