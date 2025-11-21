@@ -11,7 +11,7 @@ $confirma = $_POST['confirmar-senha'];
 
 // validação da senha
 if ($senha !== $confirma) {
-    header("Location: senha_incorreta.php");
+    header("Location: ../cadastro.html?status=error");
     exit();
 }
 
@@ -20,10 +20,11 @@ $sql = "INSERT INTO cadastro (nome, email, senha)
         VALUES ('$nome', '$email', '$senha')";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: cadastro_sucesso.php");
+    header("Location: ../cadastro.html?status=ok");
     exit();
 } else {
-    echo "Erro no cadastro: " . mysqli_error($conn);
+    header("Location: ../cadastro.html?status=error");
+    exit();
 }
 
 mysqli_close($conn);

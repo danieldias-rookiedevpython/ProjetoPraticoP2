@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniGeek Store</title>
     <link rel="icon" type="image/png" href="imagens/UniGeek_Store_logo.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="scripts.js"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="container header-inner">
             <div class="brand">
-                <img src="imagens/UniGeek_Store_logo.png" alt="UniGeek Store Logo" class="logo">
+                <a href="index.html">
+                    <img src="imagens/UniGeek_Store_logo.png" alt="UniGeek Store Logo" class="logo">
+                </a>
                 <h1 class="logo-name">UniGeek Store</h1>
             </div>
 
@@ -22,10 +26,17 @@
                     <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="index.html">Login</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </div>
+
+        <div class="carrinho">
+            <a href="carrinho.html" title="Ver Carrinho">
+                🛒 <span id="carrinho-contador">0</span>
+            </a>
+        </div>
+
     </header>
 
     <main class="main-content">
@@ -57,7 +68,7 @@
         <div>
             <h2 class="destaques-titulo">Produtos em Destaque</h2>
         </div>
-        
+
         <section class="destaques">
             <div class="destaques-inner">
                 <div class="produtos-destaque">
@@ -86,24 +97,25 @@
     </main>
 
     <footer class="footer">
-            <div class="footer-inner">
-                <p>&copy; 2024 UniGeek Store. Todos os direitos reservados.</p>
-            </div>
-            <h4>Formas de Pagamento</h4>
-            <div class="icones">
-                <img src="imagens/icones-pag/visa-icone.png" alt="Visa" class="icone-pagamento">
-                <img src="imagens/icones-pag/icone_mastercard.png" alt="MasterCard" class="icone-pagamento">
-                <img src="imagens/icones-pag/americanexpress-icon.png" alt="American Express" class="icone-pagamento">
-                <img src="imagens/icones-pag/paypal-icone.png" alt="PayPal" class="icone-pagamento">
-                <img src="imagens/icones-pag/icone_pix.png" alt="Pix" class="icone-pagamento">
-            </div>
-            <h4>Siga-nos nas Redes Sociais</h4>
-            <div class="redes-sociais">
-                <img src="imagens/icones-redesSocias/facebook-icon.jpg" alt="Facebook" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/instagram-icon.jpg" alt="Instagram" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/x(twitter)-icon.png" alt="Twitter" class="icone-rede-social">
-                <img src="imagens/icones-redesSocias/linkedin-icon.png "alt="LinkedIn" class="icone-rede-social">
-            </div>
+        <div class="footer-inner">
+            <p>&copy; 2024 UniGeek Store. Todos os direitos reservados.</p>
+        </div>
+        <h4>Formas de Pagamento</h4>
+        <div class="icones">
+            <img src="imagens/icones-pag/visa-icone.png" alt="Visa" class="icone-pagamento">
+            <img src="imagens/icones-pag/icone_mastercard.png" alt="MasterCard" class="icone-pagamento">
+            <img src="imagens/icones-pag/americanexpress-icon.png" alt="American Express" class="icone-pagamento">
+            <img src="imagens/icones-pag/paypal-icone.png" alt="PayPal" class="icone-pagamento">
+            <img src="imagens/icones-pag/icone_pix.png" alt="Pix" class="icone-pagamento">
+        </div>
+        <h4>Siga-nos nas Redes Sociais</h4>
+        <div class="redes-sociais">
+            <img src="imagens/icones-redesSocias/facebook-icon.jpg" alt="Facebook" class="icone-rede-social">
+            <img src="imagens/icones-redesSocias/instagram-icon.jpg" alt="Instagram" class="icone-rede-social">
+            <img src="imagens/icones-redesSocias/x(twitter)-icon.png" alt="Twitter" class="icone-rede-social">
+            <img src="imagens/icones-redesSocias/linkedin-icon.png " alt="LinkedIn" class="icone-rede-social">
+        </div>
     </footer>
 </body>
+
 </html>
